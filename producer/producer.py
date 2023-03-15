@@ -51,7 +51,7 @@ class Producer:
 
 if __name__ == "__main__":
     producer = Producer()
-    for i in range(10):
+    while True:
         random_email = producer.create_random_email()
         producer.publish_to_kafka(random_email)
         time.sleep(5)

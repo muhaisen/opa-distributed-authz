@@ -12,4 +12,5 @@ One thing to note is that the command eval $(minikube -p minikube docker-env) ha
 ## Set namespace
 kubectl config set-context --current --namespace=opa-auhtz
 ## Logs 
-kubectl logs producer-6d4f6b674b-rvkcf
+kubectl logs -f consumer-7497866f58-dq59b 
+kubectl logs -f producer-6d4f6b674b-mdhq9
