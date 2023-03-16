@@ -14,3 +14,5 @@ kubectl config set-context --current --namespace=opa-auhtz
 ## Logs 
 kubectl logs -f consumer-7497866f58-dq59b 
 kubectl logs -f producer-6d4f6b674b-mdhq9
+
+Ephemeral storage
