@@ -47,7 +47,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: opa
+  name: opa-service
   labels:
     app: opa
 spec:

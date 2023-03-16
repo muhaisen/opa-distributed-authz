@@ -34,3 +34,13 @@ delete-consumer:
 	kubectl delete deployment consumer
 # Delete deployments
 delete:delete-producer delete-consumer
+
+
+# Delete the consumer deplotment
+delete-node-app:
+	kubectl delete deployment node-app
+delete-opa:
+	kubectl delete deployment opa
+delete-opa-service:
+	kubectl delete service opa-service
+delete-opa:delete-node-app delete-opa delete-opa-service
