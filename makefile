@@ -8,7 +8,7 @@ build-producer:
 
 # Build the node Docker image
 build-node-app:
-	docker build -t ai-node-app:2023 -f app/Dockerfile .
+	docker build --no-cache -t ai-node-app:2023 -f app/Dockerfile .
 
 # Build the opa-service Docker image
 build-opa:

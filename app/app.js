@@ -22,7 +22,7 @@ app.get('/request', async (req, res, next) => {
     let requestData = { "input": { "group": requestGroup, "resource": requestResource } }
 
     // Make HTTP Request to Policy Service (OPA) with Request Data 
-    let policyServiceURL = 'http://opa-service.opa-auhtz.svc.cluster.local/v1/data/opablog/allow'
+    let policyServiceURL = 'http://opa-service.opa-auhtz.svc.cluster.local:8181/v1/data/opablog/allow'
     const policyServiceRequest = async () => {
         try {
             const policyResponse = await axios.post(policyServiceURL, requestData);
